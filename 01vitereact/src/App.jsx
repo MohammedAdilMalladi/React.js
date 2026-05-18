@@ -1,7 +1,12 @@
+import Learn from "./learn";
+
 function App() {
   return (
-    <h1>Hello react!</h1>
+    <>
+    <h1>This h1 tag is from the app function</h1>
+    <Learn />
+    </>
   )
 }
 
-export default App
+export default App;
