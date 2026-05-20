@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 
 function Card({username, btn="visit here"}) { 
   return (
