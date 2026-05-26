@@ -11,3 +11,11 @@
 // reuse everywhere
 // cleaner code
 // easier maintenance
+
+//Basic Structure
+// function useCustomHook() {
+
+//   // hook logic
+
+//   return something;
+// }
