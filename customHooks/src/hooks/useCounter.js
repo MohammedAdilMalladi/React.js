@@ -1,21 +1,22 @@
-// What is a Custom Hook?
-// A custom hook is a normal JavaScript function that uses React hooks (useState, useEffect, etc.) to reuse logic across multiple components.
+import {useState} from "react";
 
-// Why Custom Hooks Are Used
+function useCounter(initialValue = 0){
+    const [counter, setCounter] = useState(initialValue);
 
-// Without custom hooks:
-// same logic gets repeated in many components
 
-// With custom hooks:
-// write logic once
-// reuse everywhere
-// cleaner code
-// easier maintenance
+     function increment(){
+        setCounter(counter + 1);
+     }
 
-//Basic Structure
-// function useCustomHook() {
+     function decrement(){
+        setCounter(counter - 1);
+     }
 
-//   // hook logic
+     return{
+        counter,
+        increment, 
+        decrement
+     };
+}
 
-//   return something;
-// }
+export default useCounter;
